@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mboacare/login.dart';
 import 'package:mboacare/sign_up_page.dart';
-import 'package:mboacare/settingsPage/language.dart';
 import 'package:mboacare/user_profile_page.dart';
 import 'colors.dart';
 import 'settingsPage/settings.dart';

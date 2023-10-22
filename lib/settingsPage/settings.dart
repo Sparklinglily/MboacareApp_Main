@@ -19,7 +19,7 @@ class SettingsPage extends StatelessWidget {
         ],
 
         title: Padding(
-          padding: const EdgeInsets.only(left: 95),
+          padding: const EdgeInsets.only(left: 100),
           child: SizedBox(
             width: 55,
             height: 65,
@@ -139,7 +139,7 @@ class SettingsPage extends StatelessWidget {
                   onTap: null),
               const SettingsPageListTiles(
                   icon: Icon(
-                    Iconsax.moon,
+                    Iconsax.info_circle,
                     color: AppColors.textColor2,
                     size: 25,
                   ),
