@@ -93,7 +93,7 @@ class SettingsPage extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const SettingsPageListTiles(
+              SettingsPageListTiles(
                   icon: Icon(
                     Iconsax.profile_add,
                     color: AppColors.textColor2,
@@ -104,7 +104,9 @@ class SettingsPage extends StatelessWidget {
                   trailingIcon: Icon(
                     Icons.arrow_forward_ios_outlined,
                   ),
-                  onTap: null),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/profilePage');
+                  }),
               const SettingsPageListTiles(
                   icon: Icon(
                     Iconsax.global_edit,
@@ -238,8 +240,8 @@ class DeleteAccountDialog extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: AppColors.deleteColor,
                     borderRadius: BorderRadius.circular(35)),
-                child: Center(
-                  child: const Text(
+                child: const Center(
+                  child: Text(
                     'Delete my account',
                     style: TextStyle(
                         fontSize: 15,
